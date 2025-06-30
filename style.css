@@ -1,0 +1,129 @@
+/* Importa la fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Aplica estilos globales al body */
+body {
+  font-family: 'Poppins', sans-serif; /* Usa la fuente Poppins */
+  background-color: #ffffff;          /* Fondo blanco */
+  margin: 0;                           /* Quita margen externo */
+  padding: 0;                          /* Quita relleno interno */
+}
+
+/* Estilos del encabezado */
+header h1 {
+  text-align: center;                 /* Centra el texto */
+  color: #333;                        /* Color gris oscuro */
+  position: fixed;                   /* Fija el encabezado en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;                       /* Ocupa todo el ancho de la pantalla */
+  background-color: #fff;            /* Fondo blanco */
+  z-index: 1000;                     /* Prioridad para que quede sobre otros elementos */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra inferior suave */
+  padding: 10px;                     /* Espaciado interno */
+}
+
+/* Contenedor principal donde están la lista y el formulario */
+.contenedor {
+  background-color: white;           /* Fondo blanco */
+  padding: 25px;                     /* Espaciado interno */
+  border-radius: 10px;               /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra exterior */
+  width: 100%;                       /* Ocupa todo el ancho disponible */
+  max-width: 350px;                  /* Pero no supera los 350px */
+  margin: 100px auto 40px auto;      /* Centrado y separación del header */
+  animation: fadeIn 0.8s ease;       /* Animación de entrada suave */
+}
+
+/* Estilo de títulos dentro del contenedor */
+.contenedor h2 {
+  text-align: center;               /* Centra el texto */
+  margin-bottom: 20px;              /* Espacio inferior */
+}
+
+/* Etiquetas del formulario */
+form label {
+  display: block;                   /* Cada etiqueta en su línea */
+  margin-top: 10px;                 /* Espacio superior */
+  font-size: 14px;                  /* Tamaño de letra */
+}
+
+/* Campos de entrada del formulario */
+form input {
+  width: 95%;                      /* Ocupa todo el ancho del contenedor */
+  padding: 8px;                     /* Relleno interno */
+  margin-top: 4px;                  /* Espacio entre la etiqueta y el input */
+  border: 1px solid #ccc;           /* Borde gris claro */
+  border-radius: 10px;              /* Bordes redondeados */
+  font-size: 15px;                  /* Tamaño de letra */
+}
+
+/* Botón de enviar formulario */
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #007bff;        /* Azul intenso */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;                  /* Cursor en forma de mano */
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3); /* Sombra suave */
+  transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+form button:hover {
+  background-color: #0056b3;        /* Azul más oscuro */
+  transform: scale(1.02);           /* Ligeramente más grande */
+}
+
+/* Sección de lista de usuarios */
+.lista-usuarios {
+  border-bottom: 1px solid #ddd;    /* Línea divisoria inferior */
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+/* Quita estilos de lista por defecto */
+.lista-usuarios ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Cada usuario en la lista */
+.lista-usuarios li {
+  background-color: #f4f6f8;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #007bff;
+  font-size: 15px;
+  color: #333;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  white-space: pre-line; /* permite saltos de línea con \n */
+}
+
+.lista-usuarios li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Efecto hover sobre cada usuario */
+.lista-usuarios li:hover {
+  transform: translateY(-2px);      /* Se eleva ligeramente */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); /* Sombra más marcada */
+}
+
+/* Animación de entrada suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);    /* Inicia desde abajo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);       /* Termina en su lugar */
+  }
+}

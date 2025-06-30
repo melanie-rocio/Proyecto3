@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base de Datos de Usuarios</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+    <h1 id="saludo"></h1>
+  </header>
+  <main>
+    <div class="contenedor">
+      <div class="lista-usuarios">
+        <h2>Lista de Usuarios</h2>
+        <ul id="usuarios-lista"></ul>
+      </div>
+      
+      <h2>Agregar Nuevos Usuarios <span id="nombre-usuario"></span></h2>
+
+      <form id="form-usuario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required />
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <button type="submit">Agregar Usuario</button>
+      </form>
+    </div>
+  </main>
+    <script src="app.js"></script>
+  </body>
+</html>
